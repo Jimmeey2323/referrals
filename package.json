@@ -1,0 +1,38 @@
+{
+  "type": "module",
+  "name": "referral-rewards-processor",
+  "version": "1.0.0",
+  "description": "Automated referral rewards processing system for Momence integration",
+  "main": "referral-rewards-processor.js",
+  "scripts": {
+    "start": "node referral-rewards-processor.js",
+    "dev": "NODE_ENV=development node referral-rewards-processor.js",
+    "prod": "NODE_ENV=production node referral-rewards-processor.js",
+    "schedule": "node scheduler.js",
+    "test": "NODE_ENV=test node referral-rewards-processor.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.88.0",
+    "axios": "^1.13.2",
+    "dotenv": "^16.3.1",
+    "googleapis": "^169.0.0",
+    "moment-timezone": "^0.6.0",
+    "node-cron": "^3.0.3",
+    "supabase": "^2.67.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "referral",
+    "rewards", 
+    "momence",
+    "automation",
+    "scheduled"
+  ],
+  "author": "Referral Processing System",
+  "license": "ISC"
+}

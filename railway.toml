@@ -1,0 +1,17 @@
+# Railway Configuration
+# This file is automatically detected by Railway
+
+# Build Configuration
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+# Deployment Configuration  
+[deploy]
+startCommand = "npm run schedule"
+healthcheckPath = "/health"
+healthcheckTimeout = 30
+
+# Environment Configuration
+[env]
+NODE_ENV = "production"
